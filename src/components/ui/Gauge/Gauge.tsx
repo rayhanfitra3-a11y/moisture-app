@@ -28,14 +28,14 @@ export const Gauge: React.FC<GaugeProps> = ({
   const strokeDashoffset = circumference - (value / max) * circumference;
   
   const getColor = (val: number) => {
-    if (val < 30) return '#ef4444'; 
+    if (val < 40) return '#ef4444'; 
     if (val < 50) return '#f59e0b'; 
     if (val < 80) return '#10b981'; 
     return '#3b82f6'; 
   };
   
   const getStatus = (val: number) => {
-    if (val < 30) return 'Sangat Kering';
+    if (val < 40) return 'Sangat Kering';
     if (val < 50) return 'Kering';
     if (val < 80) return 'Baik';
     return 'Lembab';
